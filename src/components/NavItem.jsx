@@ -12,7 +12,7 @@ export default class NavItem extends Component {
 
   render() {
     return (
-      <div className='bg-red-300 w-3/12'>
+      <div className='w-3/12 pt-4 hover:bg-cooler-blue'>
         <h2 className='font-normal font-my-sans
                        text-3xl text-cool-white text-center'>
           {this.props.item}

@@ -13,7 +13,7 @@ export default class Header extends Component {
                     <ImageLogo />
                 </div>
 
-                <div className='col-span-4 row-span-1 bg-orange-300'>
+                <div className='col-span-4 row-span-1'>
                     <TextLogo />
                 </div>
 
