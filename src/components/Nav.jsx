@@ -8,7 +8,7 @@ export default class Nav extends Component {
     this.state = {
       active: 'about'
     }
-    
+
     this.handleClickAbout = this.handleClickAbout.bind(this);
     this.handleClickBlog = this.handleClickBlog.bind(this);
     this.handleClickProjects = this.handleClickProjects.bind(this);
@@ -43,7 +43,6 @@ export default class Nav extends Component {
     let active = this.refFour.current.props.item;
     this.setState({active});
   }
-
 
   render() {
     return (
