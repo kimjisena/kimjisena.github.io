@@ -9,15 +9,16 @@ export default class Header extends Component {
     return (
         <div className='fixed top-0 w-3/4 pt-3'>
             <header className='grid grid-cols-12 grid-rows-2 gap-3 col-span-full'>
-                <div className='col-span-4 row-span-full bg-orange-300 h-32'>
+                <div className='col-span-4 row-span-full bg-orange-300'>
                     <ImageLogo />
                 </div>
-                
+
                 <div className='col-span-4 row-span-1 bg-orange-300'>
                     <TextLogo />
                 </div>
 
-                <nav className='col-span-8 row-start-2 bg-cool-blue grid grid-cols-8 gap-3'>
+                <nav className='col-span-8 row-start-2
+                              bg-cool-blue grid grid-cols-8'>
                     <Nav />
                 </nav>
             </header>
