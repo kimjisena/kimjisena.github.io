@@ -3,6 +3,9 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
+    fontFamily: {
+      'my-sans': ['"URW Gothic"', 'sans-serif']
+    },
     extend: {
       colors: {
         'cool-white': 'rgb(217, 233, 233)',
