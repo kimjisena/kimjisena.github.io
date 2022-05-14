@@ -7,7 +7,7 @@ export default class Header extends Component {
 
   render() {
     return (
-        <div className='fixed top-0 w-3/4 pt-3'>
+        <div className='fixed top-0 w-3/4 pt-3 bg-cool-white'>
             <header className='grid grid-cols-12 grid-rows-2 gap-3 col-span-full'>
                 <div className='col-span-4 row-span-full bg-orange-300'>
                     <ImageLogo />

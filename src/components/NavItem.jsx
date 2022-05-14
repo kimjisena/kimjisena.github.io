@@ -8,11 +8,22 @@ export default class NavItem extends Component {
     this.state = {
        first: true
     }
+    this.ref = React.createRef();
+    //this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    //this.ref.current.style.backgroundColor = 'rgb(111, 161, 111)';
   }
 
   render() {
     return (
-      <div className='w-3/12 pt-4 hover:bg-cooler-blue'>
+      <div className={`w-3/12 pt-4 hover:bg-cooler-blue
+                      hover:cursor-pointer 
+                      ${this.props.active === this.props.item ? 'bg-cool-green' : ''}
+                      `}
+           onClick={this.props.clicked}
+           ref={this.ref}>
         <h2 className='font-normal font-my-sans
                        text-3xl text-cool-white text-center'>
           {this.props.item}
