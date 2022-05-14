@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Section from './Section';
-import Aside from './Aside';
+import Button from './Button';
+import Main from './Main';
 
 export default class Layout extends Component {
 
@@ -15,10 +15,10 @@ export default class Layout extends Component {
 
   render() {
     return (
-      <div className='container grid grid-cols-12 gap-2 mx-auto'>
+      <div className='container grid grid-cols-12 gap-3 mx-auto w-3/4'>
         <Header />
-        <Section />
-        <Aside />
+        <Main />
+        <Button />
       </div>
     )
   }

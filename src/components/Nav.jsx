@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import NavItem from './NavItem';
 
 export default class Nav extends Component {
   render() {
     return (
         <>
-        <p>about</p>
-        <p>projects</p>
-        <p>blog</p>
-        <p>contact</p>
+        <NavItem />
+        <NavItem />
+        <NavItem />
+        <NavItem />
         </>
     )
   }
