@@ -6,7 +6,7 @@ import Main from './Main';
 export default class Layout extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
   
     this.state = {
        first: true,
