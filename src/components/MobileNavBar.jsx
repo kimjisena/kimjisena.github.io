@@ -5,24 +5,13 @@ import MobileTopNav from './MobileTopNav';
 export default class MobileNavBar extends Component {
     constructor(props) {
       super(props);
-    
-      this.state = {
-         side: false
-      }
-
-      this.showSideNav = this.showSideNav.bind(this);
     }
-
-    showSideNav (e) {
-        this.setState({side: true});
-    }
-
 
   render() {
     return (
       <>
-        <MobileTopNav />
-        <MobileSideNav show={this.state.side} />
+        <MobileTopNav clicked={this.props.clicked} show={this.props.top} />
+        <MobileSideNav clicked={this.props.clicked} show={this.props.side} />
       </>
     )
   }
