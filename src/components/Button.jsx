@@ -1,13 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { FaChevronUp } from 'react-icons/fa';
 
 export default class Button extends Component {
   render() {
     return (
         <div className='fixed top-3/4 right-12 
-                        bg-cool-black text-white border-[1px]
-                        rounded-md p-1
-                        hover:bg-cool-blue'>
-            <button>back to the top</button>
+                        bg-cool-blue text-cool-white border-[1px]
+                        rounded-full p-1
+                        hover:bg-cooler-blue'>
+
+                          <FaChevronUp className='w-8 h-8'/>
         </div>
     )
   }
