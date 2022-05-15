@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class NavItem extends Component {
 
@@ -9,11 +9,7 @@ export default class NavItem extends Component {
        first: true
     }
     this.ref = React.createRef();
-    //this.handleClick = this.handleClick.bind(this);
-  }
 
-  handleClick(e) {
-    //this.ref.current.style.backgroundColor = 'rgb(111, 161, 111)';
   }
 
   render() {

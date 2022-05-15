@@ -21,6 +21,13 @@ export default class Nav extends Component {
 
   }
 
+  handleClick(e, any) {
+    let active = this.refTwo.current.props.item;
+    this.setState({active});
+    console.log(any);
+
+  }
+
   handleClickAbout(e) {
     let active = this.refOne.current.props.item;
     this.setState({active});
