@@ -15,7 +15,7 @@ export default class Layout extends Component {
 
   render() {
     return (
-      <div className='container grid grid-cols-12 gap-3 mx-auto w-3/4'>
+      <div className='container grid grid-cols-12 gap-3 mx-auto w-full xl:w-4/5'>
         <Header />
         <MobileMain />
         <Main />

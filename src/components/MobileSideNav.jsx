@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 export default class MobileSideNav extends Component {
-    constructor(props) {
-      super(props);
-    }
 
   render() {
     return (

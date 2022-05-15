@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import { FaChevronUp } from 'react-icons/fa';
 
 export default class Button extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
-        <div className={`fixed top-3/4 ${this.props.show ? 'right-12': '-right-12'}
+        <div className={`fixed top-3/4 ${this.props.show ? 'right-2': '-right-12'}
+                         xl:right-20
                         bg-cool-blue text-cool-white border-[1px]
                         rounded-full p-1
                         hover:bg-cooler-blue`}>
