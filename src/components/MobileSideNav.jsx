@@ -8,9 +8,9 @@ export default class MobileSideNav extends Component {
 
   render() {
     return (
-        <div className={`bg-orange-300 h-56 row-start-2 absolute w-5/6 ${this.props.show ? '': '-left-full'}`}>
+        <div className={`bg-cool-blue row-start-2 absolute w-5/6 ${this.props.show ? '': '-left-full'} h-screen`}>
             <div onClick={this.props.clicked}>
-                <FaTimes className='w-8 h-8 mx-auto pt-1 text-cool-white'/>
+                <FaTimes className='w-8 h-8 pt-1 text-cool-white absolute right-3'/>
             </div>
           MobileSideNav
         </div>

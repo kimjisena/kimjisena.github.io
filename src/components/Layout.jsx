@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import Button from './Button';
 import Main from './Main';
 import MobileMain from './MobileMain';
 
@@ -20,7 +19,6 @@ export default class Layout extends Component {
         <Header />
         <MobileMain />
         <Main />
-        <Button />
       </div>
     )
   }
