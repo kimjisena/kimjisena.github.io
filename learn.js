@@ -84,3 +84,8 @@ console.log(store.getState());
 
 store.dispatch({type: 'decremented/XY'});
 console.log(store.getState());
+
+test('tests', () => {
+    let i = 1;
+    console.log(tested);
+}).expects(i).toBe(1);
