@@ -11,7 +11,6 @@ export default function About() {
         <div className='rounded-full border-dotted border-4 border-cool-black '>
           <img src={kim} alt='' className='rounded-full' />
         </div>
-        <h1 className='text-center text-cool-black font-bold font-my-sans text-2xl'>{'<jisena />'}</h1>
       </div>
 
       {/*section main content*/}
