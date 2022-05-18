@@ -8,7 +8,7 @@ export default function Mobile() {
   return (
     <div className='md:hidden'>
         <TopNav />
-        <SideNav />
+        {/* <SideNav /> */}
         <MobileMain />
         <BackToTheTop />
     </div>
