@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
-import Layout from "./components/backup/Layout";
-// import React, { useEffect } from 'react';
-// import Play from './learn/Play';
-
-// export default function App() {
-
-//   useEffect(() => {
-//     document.body.style.backgroundColor = 'rgb(217, 233, 233)';
-//     window.addEventListener('popstate', e => {
-//       console.log(e);
-//   });
-//   });
-
-//   return (
-//     <Play />
-//   )
-// }
-
+import { Routes, Route } from 'react-router-dom';
+import Mobile from './components/mobile/Mobile';
+import Desktop from './components/desktop/Desktop';
+//import Layout from "./components/backup/Layout";
 
 export default class App extends Component {
   constructor(props) {
@@ -33,7 +19,14 @@ export default class App extends Component {
 
   render() {
     return (
-      <Layout />
+      <>
+        <Routes>
+          <Route path='/' element={<Mobile />}/>
+        </Routes>
+        <Routes>
+          <Route path='/' element={<Desktop />} />
+        </Routes>
+      </>
     )
   }
 }
