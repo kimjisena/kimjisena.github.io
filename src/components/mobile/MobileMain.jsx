@@ -1,11 +1,17 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import About from './About';
+import Projects from './Projects';
+import Blog from './Blog';
+import Contact from './Contact';
 
 export default function MobileMain() {
   return (
     <div>
         Main
-        <Outlet />
+        <About />
+        <Projects />
+        <Blog />
+        <Contact />
     </div>
   );
 }
