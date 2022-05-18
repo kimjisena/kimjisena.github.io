@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Desktop() {
   return (
-    <div className='hidden md:contents'>Desktop version coming soon!</div>
+    <div className='hidden sm:contents'>Desktop version coming soon!</div>
   );
 }

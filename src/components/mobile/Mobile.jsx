@@ -6,7 +6,7 @@ import BackToTheTop from './BackToTheTop';
 
 export default function Mobile() {
   return (
-    <div className='md:hidden'>
+    <div className='sm:hidden'>
         <TopNav />
         {/* <SideNav /> */}
         <MobileMain />
