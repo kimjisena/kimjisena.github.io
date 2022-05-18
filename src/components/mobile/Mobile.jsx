@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Mobile() {
   return (
-    <div className='xl:hidden'>Mobile</div>
-  )
+    <div className='md:hidden'>Mobile</div>
+  );
 }
