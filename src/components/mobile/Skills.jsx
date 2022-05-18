@@ -29,9 +29,6 @@ import { SiVisualstudiocode } from 'react-icons/si';
 import { SiGnubash } from 'react-icons/si';
 // platform
 import { SiLinux } from 'react-icons/si';
-// social
-import { DiGithubBadge } from 'react-icons/di';
-import {BsTwitter} from 'react-icons/bs';
 // honorable mention. I use arch, btw :)
 import { SiArchlinux } from 'react-icons/si';
 
@@ -50,7 +47,7 @@ const icons = {
 export default function Skills() {
   return (
     <div className='grid grid-cols-3 gap-2 grid-rows-7'>
-        {Object.keys(icons).map((key) => {
+        {Object.keys(icons).map(key => {
           let Icon = icons[key];
           return <SkillCard key={key} icon={<Icon size='40px' className='text-cool-white' />} name={key} />
         })}
