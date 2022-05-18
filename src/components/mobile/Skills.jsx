@@ -35,32 +35,24 @@ import {BsTwitter} from 'react-icons/bs';
 // honorable mention. I use arch, btw :)
 import { SiArchlinux } from 'react-icons/si';
 
-const icons = [
-    FaReact, SiRedux, SiReactrouter, SiTailwindcss,
-    DiJavascript, DiHtml5, DiCss3,
-    DiPython, FaNodeJs, SiDjango,
-    SiSqlite, SiPostgresql,
-    SiGimp, SiInkscape, SiFigma,
-    DiGit,
-    SiVim, SiVisualstudiocode,
-    SiGnubash,
-    SiLinux, SiArchlinux
-]
-const names = [
-    'React', 'Redux', 'React Router', 'TailwindCSS',
-    'JavaScript', 'HTML5', 'CSS3',
-    'Python', 'NodeJS', 'Django',
-    'SQLite', 'PostgreSQL', 
-    'Gimp', 'Inkscape', 'Figma',
-    'Git',
-    'Vim', 'VS Code',
-    'GNU Bash', 'Linux', 'Arch'
-]
+const icons = {
+  'React': FaReact, 'Redux': SiRedux, 'React Router': SiReactrouter, 'TailwindCSS': SiTailwindcss,
+  'JavaScript': DiJavascript, 'HTML5': DiHtml5, 'CSS3': DiCss3,
+  'Python': DiPython, 'NodeJS': FaNodeJs, 'Django': SiDjango,
+  'SQLite': SiSqlite, 'PostgreSQL': SiPostgresql,
+  'Gimp': SiGimp, 'Inkscape': SiInkscape, 'Figma': SiFigma,
+  'Git': DiGit,
+  'Vim': SiVim, 'VS Code': SiVisualstudiocode,
+  'GNU Bash': SiGnubash,
+  'Linux': SiLinux, 'Arch Linux': SiArchlinux
+}
+
 export default function Skills() {
   return (
     <div className='grid grid-cols-3 gap-2 grid-rows-7'>
-        {icons.map((E, index) => {
-            return <SkillCard key={index} icon={<E size='40px' className='text-cool-white' />} name={names[index]} />
+        {Object.keys(icons).map((key) => {
+          let Icon = icons[key];
+          return <SkillCard key={key} icon={<Icon size='40px' className='text-cool-white' />} name={key} />
         })}
     </div>
   )
