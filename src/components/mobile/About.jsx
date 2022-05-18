@@ -6,8 +6,8 @@ export default function About() {
   return (
     <section id='about' className='col-span-full grid grid-cols-3'>
       {/* image and text logo */}
-      <div className='col-span-1 col-start-2'>
-        <div className='rounded-full bg-cool-black mt-1'>
+      <div className='col-span-1 col-start-2 border-2 border-cool-black rounded-2xl mt-2 border-dotted'>
+        <div className='rounded-full'>
           <img src={logo2} alt='' />
         </div>
         <h1 className='text-center text-cool-black font-bold font-my-sans text-2xl'>{'<jisena />'}</h1>
