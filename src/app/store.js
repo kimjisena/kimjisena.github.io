@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { counterReducer, initialState } from "../learn/reducers";
 
 export default configureStore({
-    reducer: {},
+    reducer: counterReducer,
     //middleware:[],
     //devTools: {},
-    //preloadedState: {},
+    preloadedState: initialState,
     //enhancers: [],
     });
