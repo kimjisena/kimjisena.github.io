@@ -6,7 +6,7 @@ import Contact from './Contact';
 
 export default function MobileMain() {
   return (
-    <div className='bg-red-300 px-2 mt-12 grid grid-cols-12'>
+    <div className='px-2 mt-12 grid grid-cols-12'>
         <About />
         <Projects />
         <Blog />
