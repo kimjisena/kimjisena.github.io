@@ -1,4 +1,5 @@
 import React from 'react';
+import SkillCard from './SkillCard';
 // frontend libs & utils
 import { FaReact } from 'react-icons/fa';
 import { SiRedux } from 'react-icons/si';
@@ -43,14 +44,23 @@ const icons = [
     DiGit,
     SiVim, SiVisualstudiocode,
     SiGnubash,
-    SiLinux
+    SiLinux, SiArchlinux
 ]
-
+const names = [
+    'React', 'Redux', 'React Router', 'TailwindCSS',
+    'JavaScript', 'HTML5', 'CSS3',
+    'Python', 'NodeJS', 'Django',
+    'SQLite', 'PostgreSQL', 
+    'Gimp', 'Inkscape', 'Figma',
+    'Git',
+    'Vim', 'VS Code',
+    'GNU Bash', 'Linux', 'Arch'
+]
 export default function Skills() {
   return (
-    <div className='grid grid-cols-4 gap-2 grid-rows-5'>
+    <div className='grid grid-cols-3 gap-2 grid-rows-7'>
         {icons.map((E, index) => {
-            return <div key={index}><E size='48px' className=''/></div>
+            return <SkillCard key={index} icon={<E size='40px' className='text-cool-white' />} name={names[index]} />
         })}
     </div>
   )
