@@ -1,6 +1,5 @@
 import React from 'react';
 import logo1 from '../../res/images/logo1.png';
-import { Link } from 'react-router-dom';
 
 export default function ProjectCard() {
   return (
@@ -16,7 +15,7 @@ export default function ProjectCard() {
             <p className='text-cooler-black text-lg font-my-sans'>
                 Ipsum est proident et ea non.
                 Officia ut magna in deserunt consequat laborum
-                {/*project link*/} <Link to={'https://kimjisena.shit-racer.github.io'} className='text-cool-green hover:text-cool-blue visited:text-yellow-300 underline'>fugiat sint</Link>.
+                {/*project link*/} <a href={'#about'} className='text-cool-green hover:text-cool-blue visited:text-yellow-300 underline'>fugiat sint</a>.
             </p>
         </div>
     </div>
