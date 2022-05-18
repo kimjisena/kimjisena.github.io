@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo1 from '../res/images/logo1.png';
-import logo2 from '../res/images/logo2.png';
+import logo1 from '../../res/images/logo1.png';
+import logo2 from '../../res/images/logo2.png';
 
 export default class ImageLogo extends Component {
   render() {

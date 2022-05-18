@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from "./components/Layout";
+import Layout from "./components/backup/Layout";
 // import React, { useEffect } from 'react';
 // import Play from './learn/Play';
 
