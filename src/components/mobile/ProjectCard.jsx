@@ -5,9 +5,9 @@ import { ThemeContext } from '../theme-context';
 export default function ProjectCard() {
   const theme = useContext(ThemeContext);
   return (
-    <div className={`flex flex-row border-2 ${theme.H1} rounded-lg border-dotted mb-3`}>
+    <div className={`flex flex-row border-2 ${theme.h1Border} rounded-lg border-dotted mb-3`}>
         {/*project logo*/}
-        <div className={`w-20 h-20 shrink-0 self-center border-r-2 ${theme.H1} border-dotted`}>
+        <div className={`w-20 h-20 shrink-0 self-center border-r-2 ${theme.h1Border} border-dotted`}>
             <img src={logo1} alt=''/>
         </div>
 
