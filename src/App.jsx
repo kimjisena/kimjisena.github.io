@@ -1,49 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Mobile from './components/mobile/Mobile';
 import Desktop from './components/desktop/Desktop';
 //import Layout from "./components/backup/Layout";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-  
-    this.state = {
-       light: true
-    }
+export default function App() {
 
-    this.toggleTheme = this.toggleTheme.bind(this);
-  }
+  const [light, setLight] = useState(true);
 
-  toggleTheme () {
+  useEffect(() => {
+     if (light) document.body.className = 'bg-cool-white';
+     else document.body.className = 'bg-dark-cool-background';
+  });
+
+  const toggleTheme = () => {
     console.log('theme toggled!');
-    this.setState((state) => {
-      return {light: !state.light}
-    });
+    setLight(!light);
   }
 
-  componentDidMount() {
-    document.body.className = 'bg-cool-white';
-  }
+  return (
+       <>
+         {/*mobile version of the ui*/}
+         <Routes>
+           <Route path='/' element={<Mobile toggleTheme={toggleTheme} />} />
+         </Routes>
 
-  componentDidUpdate() {
-    if (this.state.light) document.body.className = 'bg-cool-white';
-    else document.body.className = 'bg-dark-cool-background';
-  }
-
-  render() {
-    return (
-      <>
-        {/*mobile version of the ui*/}
-        <Routes>
-          <Route path='/' element={<Mobile toggleTheme={this.toggleTheme} />} />
-        </Routes>
-
-        {/*desktop version of the ui*/}
-        <Routes>
-          <Route path='/' element={<Desktop />} />
-        </Routes>
-      </>
-    )
-  }
+         {/*desktop version of the ui*/}
+         <Routes>
+           <Route path='/' element={<Desktop />} />
+         </Routes>
+       </>
+  );
 }
