@@ -25,6 +25,10 @@ export default function Mobile() {
     return () => {document.removeEventListener('scroll', handleScrolling)};
   });
 
+  useEffect(() => {
+    document.body.className = 'bg-cool-white';
+  });
+
   return (
     <div className='sm:hidden'>
         <TopNav />

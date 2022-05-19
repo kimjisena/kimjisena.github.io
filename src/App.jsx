@@ -14,7 +14,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    document.body.style.backgroundColor = 'rgb(217, 233, 233)';
+    //document.body.style.backgroundColor = 'rgb(217, 233, 233)';
   }
 
   render() {
