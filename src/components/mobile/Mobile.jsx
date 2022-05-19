@@ -7,13 +7,24 @@ import BackToTheTop from './BackToTheTop';
 export default function Mobile() {
 
   const [scroll, setScroll] = useState(false);
+  const [scrollPos, setScrollPos] = useState(0);
 
   const handleScrolling = () => {
-    setScroll(true);
+    console.log(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop > scrollPos) {
+      setScrollPos(document.documentElement.scrollTop);
+      setScroll(false);
+    } else {
+      setScrollPos(document.documentElement.scrollTop);
+      setScroll(true);
+    }
+    // if (document.documentElement.scrollTop > 200) setScroll(true);
+    // else setScroll(false);
   }
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScrolling);
-    return () => {window.removeEventListener('scroll', handleScrolling)};
+    document.addEventListener('scroll', handleScrolling);
+    return () => {document.removeEventListener('scroll', handleScrolling)};
   });
 
   return (
