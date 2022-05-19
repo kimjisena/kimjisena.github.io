@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section className='col-span-full grid grid-cols-3'>
       {/* image and text logo */}
-      <div className='col-span-1 col-start-2 mt-2'>
+      <div className='col-span-1 col-start-2 mt-2' id='top'>
         <div className='rounded-full border-dotted border-4 border-cool-black '>
           <img src={kim} alt='' className='rounded-full' />
         </div>
