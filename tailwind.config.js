@@ -25,7 +25,6 @@ module.exports = {
         'cool-black': 'rgb(86, 86, 86)',
 
         'cooler-black': 'rgb(54, 52, 52)',
-
         'dark-cooler-black': 'rgb(199, 194, 186)',
 
         'cool-yellow': 'rgb(192, 135, 106)'

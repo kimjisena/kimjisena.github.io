@@ -5,8 +5,6 @@ import Desktop from './components/desktop/Desktop';
 import {ThemeContext, themes} from './components/theme-context';
 //import Layout from "./components/backup/Layout";
 
-//export const LightThemeContext = React.createContext(true);
-
 export default function App() {
 
   const [light, setLight] = useState(true);
@@ -23,7 +21,7 @@ export default function App() {
 
   return (
        <>
-       <ThemeContext.Provider value={light ? themes.light: themes.light}>
+       <ThemeContext.Provider value={light ? themes.light: themes.dark}>
          {/*mobile version of the ui*/}
 
          <Routes>
