@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { ThemeContext } from '../theme-context';
 
 export default function SideNavItem({item, link}) {
+  const theme = useContext(ThemeContext);
   return (
     <>
-        <li className='border-cool-white border-b-2 mb-1'>
+        <li className={`border-b-2 mb-1 ${theme.sideborder}`}>
             <a href={link}>
-                <h2 className='text-cool-white font-bold font-my-sans text-2xl hover:text-cool-green'>{item}</h2>
+                <h2 className={`${theme.headertxt} font-bold font-my-sans text-2xl ${theme.sidehover}`}>{item}</h2>
             </a>
         </li>
     </>

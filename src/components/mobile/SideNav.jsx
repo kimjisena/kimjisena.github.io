@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import SideNavItem from './SideNavItem';
+import { ThemeContext } from '../theme-context';
 
 const items = {
   about: '#about',
@@ -8,9 +9,11 @@ const items = {
 }
 
 export default function SideNav({show, blurred}) {
+  const theme = useContext(ThemeContext);
+
   return (
     <div className={`absolute top-full ${show ? 'right-0': 'right-full'}
-                  bg-cool-blue w-3/4 border
+                  ${theme.headerbg} w-3/4 border ${theme.sideborder}
                   rounded-tl-xl rounded-bl-xl h-40`}
          onBlur={() => blurred()}>
       <ul className='flex flex-col mt-5 ml-12'>
