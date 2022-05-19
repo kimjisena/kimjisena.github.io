@@ -15,7 +15,6 @@ export default function App() {
   });
 
   const toggleTheme = () => {
-    console.log('theme toggled!');
     setLight(!light);
   }
 
