@@ -13,13 +13,13 @@ export default function TopNav() {
         <ToggleTheme />
         <h1 className='text-center text-cool-white font-bold font-my-sans text-2xl align-middle mt-3 col-span-1'>{'<jisena />'}</h1>
         <div className='col-span-1 flex flex-row-reverse pr-4'>
-          <div className='mt-3'>
+          <div className='mt-3' onClick={() => setSideNav(!sideNav)}>
             {sideNav ? <VscChromeClose className='text-cool-white' size='32px'/>
                      : <VscMenu className='text-cool-white' size='32px'/>}
           </div>
         </div>
       </div>
-      <SideNav />
+      <SideNav show={sideNav}/>
     </header>
   );
 }
