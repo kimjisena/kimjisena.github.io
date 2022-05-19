@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import TopNav from './TopNav';
 import MobileMain from './MobileMain';
 import BackToTheTop from './BackToTheTop';
@@ -10,7 +10,7 @@ export default function Mobile() {
   const [scrollPos, setScrollPos] = useState(0);
 
   const handleScrolling = () => {
-    console.log(document.documentElement.scrollTop);
+
     if (document.documentElement.scrollTop > scrollPos) {
       setScrollPos(document.documentElement.scrollTop);
       setScroll(false);
@@ -18,8 +18,6 @@ export default function Mobile() {
       setScrollPos(document.documentElement.scrollTop);
       setScroll(true);
     }
-    // if (document.documentElement.scrollTop > 200) setScroll(true);
-    // else setScroll(false);
   }
 
   useEffect(() => {

@@ -1,9 +1,6 @@
 import React from 'react';
 import Skills from './Skills';
 import TopImage from './TopImage';
-//import logo1 from '../../res/images/logo1.png';
-//import logo2 from '../../res/images/logo2.png';
-
 
 export default function About() {
   return (
