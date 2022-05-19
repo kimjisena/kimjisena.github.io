@@ -1,16 +1,26 @@
 import React from 'react';
+import { useState, useRef, useEffect } from 'react';
 import TopNav from './TopNav';
-import SideNav from './SideNav';
 import MobileMain from './MobileMain';
 import BackToTheTop from './BackToTheTop';
 
 export default function Mobile() {
+
+  const [scroll, setScroll] = useState(false);
+
+  const handleScrolling = () => {
+    setScroll(true);
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScrolling);
+    return () => {window.removeEventListener('scroll', handleScrolling)};
+  });
+
   return (
     <div className='sm:hidden'>
         <TopNav />
-        {/* <SideNav /> */}
         <MobileMain />
-        <BackToTheTop />
+        <BackToTheTop show={scroll} />
     </div>
   );
 }

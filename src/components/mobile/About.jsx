@@ -1,8 +1,9 @@
 import React from 'react';
 import Skills from './Skills';
+import TopImage from './TopImage';
 //import logo1 from '../../res/images/logo1.png';
 //import logo2 from '../../res/images/logo2.png';
-import kim from '../../res/images/kim.jpg';
+
 
 export default function About() {
   return (
@@ -10,12 +11,7 @@ export default function About() {
     <h1 id='top' className='col-span-full invisible h-4'>top</h1>
     <section className='col-span-full grid grid-cols-3'>
       {/* image and text logo */}
-      <div className='col-span-1 col-start-2 mt-2'>
-        <div className='rounded-full border-dotted border-4 border-cool-black '>
-          <img src={kim} alt='' className='rounded-full' />
-        </div>
-      </div>
-
+      <TopImage />
       {/*section main content*/}
       <div className='col-span-full mt-2'>
       <h1 id='about' className='invisible h-12'>about me</h1>
