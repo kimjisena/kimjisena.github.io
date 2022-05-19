@@ -1,5 +1,6 @@
 import React from 'react';
 import ToggleTheme from './ToggleTheme';
+import SideNav from './SideNav';
 import {VscMenu} from 'react-icons/vsc';
 
 export default function TopNav() {
@@ -14,6 +15,7 @@ export default function TopNav() {
           </div>
         </div>
       </div>
+      <SideNav />
     </header>
   );
 }
