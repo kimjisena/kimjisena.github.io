@@ -6,9 +6,9 @@ import {BsTwitter} from 'react-icons/bs';
 import {MdEmail} from 'react-icons/md';
 
 const icons = {
-  'GitHub': DiGithubBadge,
-  'Twitter': BsTwitter,
-  'Email': MdEmail
+  GitHub: DiGithubBadge,
+  Twitter: BsTwitter,
+  Email: MdEmail
 }
 export default function Contact() {
   return (

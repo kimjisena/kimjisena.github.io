@@ -33,15 +33,15 @@ import { SiLinux } from 'react-icons/si';
 import { SiArchlinux } from 'react-icons/si';
 
 const icons = {
-  'React': FaReact, 'Redux': SiRedux, 'React Router': SiReactrouter, 'TailwindCSS': SiTailwindcss,
-  'JavaScript': DiJavascript, 'HTML5': DiHtml5, 'CSS3': DiCss3,
-  'Python': DiPython, 'NodeJS': FaNodeJs, 'Django': SiDjango,
-  'SQLite': SiSqlite, 'PostgreSQL': SiPostgresql,
-  'Gimp': SiGimp, 'Inkscape': SiInkscape, 'Figma': SiFigma,
-  'Git': DiGit,
-  'Vim': SiVim, 'VS Code': SiVisualstudiocode,
+  React: FaReact, Redux: SiRedux, 'React Router': SiReactrouter, TailwindCSS: SiTailwindcss,
+  JavaScript: DiJavascript, HTML5: DiHtml5, CSS3: DiCss3,
+  Python: DiPython, NodeJS: FaNodeJs, Django: SiDjango,
+  SQLite: SiSqlite, PostgreSQL: SiPostgresql,
+  Gimp: SiGimp, Inkscape: SiInkscape, Figma: SiFigma,
+  Git: DiGit,
+  Vim: SiVim, 'VS Code': SiVisualstudiocode,
   'GNU Bash': SiGnubash,
-  'Linux': SiLinux, 'Arch Linux': SiArchlinux
+  Linux: SiLinux, 'Arch Linux': SiArchlinux
 }
 
 export default function Skills() {
