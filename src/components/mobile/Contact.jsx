@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <section className='col-span-full mb-20'>
       <h1 id='contact' className='invisible h-12'>contact me</h1>
-      <h1 className='text-4xl text-cooler-black font-bold border-b-2 border-cooler-blue font-my-sans'>contact me</h1>
+      <h1 className='text-4xl text-cool-blue font-bold border-b-2 border-cool-black font-my-sans'>contact me</h1>
       <p className='text-cooler-black text-lg font-my-sans'>
         Ipsum est proident et ea non. Officia ut magna in deserunt consequat laborum fugiat sint. Ipsum labore enim irure sunt exercitation do sit qui quis.
       </p>

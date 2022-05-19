@@ -11,7 +11,7 @@ module.exports = {
         'cool-white': 'rgb(217, 233, 233)',
         'dark-cool-white': 'rgb(196, 221, 221)',
 
-        'dark-cool-background': 'rgb(32, 55, 55)',
+        'cool-dark': 'rgb(32, 55, 55)',
 
         'cool-blue': 'rgb(10, 146, 146)',
         'dark-cool-blue': 'rgb(8, 117, 117)',
@@ -25,7 +25,10 @@ module.exports = {
         'cool-black': 'rgb(86, 86, 86)',
 
         'cooler-black': 'rgb(54, 52, 52)',
-        'dark-cooler-black': 'rgb(199, 194, 186)'
+
+        'dark-cooler-black': 'rgb(199, 194, 186)',
+
+        'cool-yellow': 'rgb(192, 135, 106)'
 
       }
     },
