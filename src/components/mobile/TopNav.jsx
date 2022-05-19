@@ -7,6 +7,9 @@ import { VscChromeClose } from 'react-icons/vsc';
 
 export default function TopNav() {
   const [sideNav, setSideNav] = useState(false);
+  const handleBlur = () => {
+    setSideNav(!sideNav);
+  }
   return (
     <header className='fixed top-0 w-full h-14 bg-cool-blue'>
       <div className='grid grid-cols-3 h-full'>
@@ -19,7 +22,7 @@ export default function TopNav() {
           </div>
         </div>
       </div>
-      <SideNav show={sideNav}/>
+      <SideNav show={sideNav} blurred={handleBlur}/>
     </header>
   );
 }
