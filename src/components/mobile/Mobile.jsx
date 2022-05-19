@@ -4,7 +4,7 @@ import TopNav from './TopNav';
 import MobileMain from './MobileMain';
 import BackToTheTop from './BackToTheTop';
 
-export default function Mobile() {
+export default function Mobile({toggleTheme}) {
 
   const [scroll, setScroll] = useState(false);
   const [scrollPos, setScrollPos] = useState(0);
@@ -25,13 +25,13 @@ export default function Mobile() {
     return () => {document.removeEventListener('scroll', handleScrolling)};
   });
 
-  useEffect(() => {
-    document.body.className = 'bg-cool-white';
-  });
+  // useEffect(() => {
+  //   document.body.className = 'bg-cool-white';
+  // });
 
   return (
     <div className='sm:hidden'>
-        <TopNav />
+        <TopNav toggleTheme={toggleTheme}/>
         <MobileMain />
         <BackToTheTop show={scroll} />
     </div>

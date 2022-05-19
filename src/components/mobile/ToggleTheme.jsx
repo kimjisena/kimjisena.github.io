@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { MdNightlight } from 'react-icons/md';
 import { MdLightMode } from 'react-icons/md';
 
-export default function ToggleTheme() {
+export default function ToggleTheme({toggleTheme}) {
   const [light, setLight] = useState(true);
 
   return (
@@ -11,7 +11,8 @@ export default function ToggleTheme() {
                     col-span-1 w-20 mt-3 ml-2 flex 
                     flex-row justify-between h-9 
                     rounded-full bg-cool-black'
-          onClick={() => setLight(!light)}>
+          onClick={() => {toggleTheme(); setLight(!light)}}>
+          
         <div className={`${light ? '' : 'order-2'}`}>
             <MdNightlight className='text-[#c0876a]' size='32px' />
         </div>

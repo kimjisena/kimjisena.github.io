@@ -9,12 +9,26 @@ export default class App extends Component {
     super(props);
   
     this.state = {
-       first: true
+       light: true
     }
+
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
+
+  toggleTheme () {
+    console.log('theme toggled!');
+    this.setState((state) => {
+      return {light: !state.light}
+    });
   }
 
   componentDidMount() {
-    //document.body.style.backgroundColor = 'rgb(217, 233, 233)';
+    document.body.className = 'bg-cool-white';
+  }
+
+  componentDidUpdate() {
+    if (this.state.light) document.body.className = 'bg-cool-white';
+    else document.body.className = 'bg-dark-cool-background';
   }
 
   render() {
@@ -22,7 +36,7 @@ export default class App extends Component {
       <>
         {/*mobile version of the ui*/}
         <Routes>
-          <Route path='/' element={<Mobile />} />
+          <Route path='/' element={<Mobile toggleTheme={this.toggleTheme} />} />
         </Routes>
 
         {/*desktop version of the ui*/}
