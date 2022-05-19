@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import SkillCard from './SkillCard';
+import { ThemeContext } from '../theme-context';
 // frontend libs & utils
 import { FaReact } from 'react-icons/fa';
 import { SiRedux } from 'react-icons/si';
@@ -45,11 +46,12 @@ const icons = {
 }
 
 export default function Skills() {
+  const theme = useContext(ThemeContext);
   return (
     <div className='grid grid-cols-3 gap-2 grid-rows-7'>
         {Object.keys(icons).map(key => {
           let Icon = icons[key];
-          return <SkillCard key={key} icon={<Icon size='40px' className='text-cool-white' />} name={key} />
+          return <SkillCard key={key} icon={<Icon size='40px' className={`${theme.icon}`} />} name={key} />
         })}
     </div>
   )
