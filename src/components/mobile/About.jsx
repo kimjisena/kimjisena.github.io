@@ -6,9 +6,11 @@ import kim from '../../res/images/kim.jpg';
 
 export default function About() {
   return (
+    <>
+    <h1 id='top' className='col-span-full invisible h-4'>top</h1>
     <section className='col-span-full grid grid-cols-3'>
       {/* image and text logo */}
-      <div className='col-span-1 col-start-2 mt-2' id='top'>
+      <div className='col-span-1 col-start-2 mt-2'>
         <div className='rounded-full border-dotted border-4 border-cool-black '>
           <img src={kim} alt='' className='rounded-full' />
         </div>
@@ -51,5 +53,6 @@ export default function About() {
           </p>
       </div>
     </section>
+    </>
   );
 }
