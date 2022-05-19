@@ -12,6 +12,7 @@ export const themes = {
         headerbg: 'bg-cool-blue',
         headertxt: 'text-cool-white',
         sideborder: 'border-cool-white',
+        footer: 'bg-cool-green'
     },
     dark: {
         background: 'bg-cool-dark',
@@ -23,7 +24,8 @@ export const themes = {
         sidehover: 'hover:text-cool-green',
         headerbg: 'bg-dark-cool-blue',
         headertxt: 'text-dark-cool-white',
-        sideborder: 'border-dark-cool-white'
+        sideborder: 'border-dark-cool-white',
+        footer: 'bg-dark-cool-green'
     }
 }
 
