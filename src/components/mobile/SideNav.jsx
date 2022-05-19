@@ -1,4 +1,11 @@
 import React from 'react';
+import SideNavItem from './SideNavItem';
+
+const items = {
+  about: '#about',
+  projects: '#projects',
+  contact: '#contact'
+}
 
 export default function SideNav() {
   return (
@@ -6,15 +13,9 @@ export default function SideNav() {
                   bg-cool-blue w-3/4 border
                   rounded-tl-xl rounded-bl-xl h-40'>
       <ul className='flex flex-col mt-5 ml-12'>
-        <li className='border-cool-white border-b-2 mb-1'>
-          <h2 className='text-cool-white font-bold font-my-sans text-2xl'>about</h2>
-        </li>
-        <li className='border-cool-white border-b-2 mb-1'>
-          <h2 className='text-cool-white font-bold font-my-sans text-2xl'>projects</h2>
-        </li>
-        <li className='border-cool-white border-b-2 mb-1'>
-          <h2 className='text-cool-white font-bold font-my-sans text-2xl'>contact</h2>
-        </li>        
+        {Object.keys(items).map(key => {
+          return <SideNavItem key={key} item={key} link={items[key]} />
+        })}       
       </ul>
     </div>
   );

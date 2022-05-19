@@ -15,8 +15,9 @@ export default function About() {
       </div>
 
       {/*section main content*/}
-      <div className='col-span-full mt-1'>
-        <h1 id='about' className='text-4xl text-cooler-black font-bold border-b-2 border-cooler-blue font-my-sans'>about me</h1>
+      <div className='col-span-full mt-2'>
+      <h1 id='about' className='invisible h-12'>about me</h1>
+        <h1 className='text-4xl text-cooler-black font-bold border-b-2 border-cooler-blue font-my-sans'>about me</h1>
         <h2 className='text-cooler-blue text-2xl font-bold font-my-sans'>who am i</h2>
           <p className='text-cooler-black text-lg font-my-sans'>
             Ipsum est proident et ea non. Officia ut magna in deserunt consequat laborum fugiat sint. Ipsum labore enim irure sunt exercitation do sit qui quis.
