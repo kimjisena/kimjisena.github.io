@@ -8,7 +8,9 @@ export const themes = {
         H1: 'text-cool-blue',
         h1Border: 'border-cooler-black',
         pH2: 'text-cooler-black',
-        footer: 'bg-cool-green'
+        footer: 'bg-cool-green',
+        headerbg: 'bg-cool-blue',
+        headertxt: 'text-cool-white'
     },
     dark: {
         background: 'bg-cool-dark',
@@ -17,7 +19,9 @@ export const themes = {
         H1: 'text-dark-cooler-blue',
         h1Border: 'border-dark-cooler-black',
         pH2: 'text-dark-cooler-black',
-        footer: 'bg-dark-cool-green'
+        footer: 'bg-dark-cool-green',
+        headerbg: 'bg-dark-cool-blue',
+        headertxt: 'text-dark-cool-white'
     }
 }
 
