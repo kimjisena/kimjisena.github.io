@@ -26,7 +26,7 @@ export default function Contact() {
       <div className='grid grid-cols-3 gap-2 justify-items-center mt-3'>
         {Object.keys(icons).map(key => {
           let Icon = icons[key];
-          return <ContactCard icon={<Icon key={key} size='32px' className='text-cool-white'/>} name={key}/>
+          return <ContactCard key={key} icon={<Icon size='32px' className='text-cool-white'/>} name={key}/>
         })}
       </div>
     </section>
