@@ -24,7 +24,7 @@ export default function Projects() {
                     Let's me focus on K &amp; R. It's <a href={'https://github.com/kimjisena/compyle'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
                     </Paragraph>
     },
-    'react-portifolio': {
+    'react-portfolio': {
       done: false,
       logo: javascript,
       description:  <Paragraph theme={theme.pH2}>
