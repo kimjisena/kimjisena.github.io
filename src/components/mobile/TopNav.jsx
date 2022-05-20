@@ -18,7 +18,7 @@ export default function TopNav({toggleTheme}) {
     <header className={`fixed top-0 w-full h-14 ${theme.headerbg}`}>
       <div className='grid grid-cols-3 h-full'>
         <ToggleTheme toggleTheme={toggleTheme} />
-        <h1 className={`text-center ${theme.headertxt} font-bold font-my-sans text-2xl align-middle mt-3 col-span-1`}>{'<jisena />'}</h1>
+        <h1 className={`text-center ${theme.headertxt} font-bold font-my-cursive text-4xl align-middle mt-3 col-span-1`}>{'jisena'}</h1>
         <div className='col-span-1 flex flex-row-reverse pr-4'>
           <div className='mt-3' onClick={() => setSideNav(!sideNav)}>
             {sideNav ? <VscChromeClose className={`${theme.icon}`} size='32px'/>

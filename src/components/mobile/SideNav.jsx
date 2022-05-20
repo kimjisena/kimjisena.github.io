@@ -16,7 +16,7 @@ export default function SideNav({show, blurred}) {
                   ${theme.headerbg} w-3/4 border ${theme.sideborder}
                   rounded-tl-xl rounded-bl-xl h-40`}
          onBlur={() => blurred()}>
-      <ul className='flex flex-col mt-5 ml-12'>
+      <ul className='flex flex-col mt-3 ml-12'>
         {Object.keys(items).map(key => {
           return <SideNavItem key={key} item={key} link={items[key]} />
         })}       

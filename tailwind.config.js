@@ -4,7 +4,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'my-sans': ['"URW Gothic"', 'sans-serif']
+      'my-sans': ['BIZ UDPGothic', 'sans-serif'],
+      'my-serif': ['EB Garamond', 'serif'],
+      'my-cursive': ['Grape Nuts', 'cursive']
     },
     extend: {
       colors: {

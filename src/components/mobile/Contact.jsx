@@ -22,10 +22,16 @@ export default function Contact() {
   return (
     <section className='col-span-full mb-20'>
       <h1 id='contact' className='invisible h-12'>contact me</h1>
-      <h1 className={`text-4xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-sans`}>contact me</h1>
-      <Paragraph text={text} theme={theme.pH2} />
-      <Paragraph text={text} theme={theme.pH2} />
-      <Paragraph text={text} theme={theme.pH2} />
+      <h1 className={`text-5xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-serif`}>Contact me</h1>
+      <Paragraph theme={theme.pH2}>
+        {text}
+      </Paragraph>
+      <Paragraph theme={theme.pH2}>
+        {text}
+      </Paragraph>
+      <Paragraph theme={theme.pH2}>
+        {text}
+      </Paragraph>
       <div className='grid grid-cols-3 gap-2 justify-items-center mt-3'>
         {Object.keys(icons).map(key => {
           let Icon = icons[key];
@@ -33,5 +39,5 @@ export default function Contact() {
         })}
       </div>
     </section>
-  )
+  );
 }

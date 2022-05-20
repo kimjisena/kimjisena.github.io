@@ -48,7 +48,7 @@ const icons = {
 export default function Skills() {
   const theme = useContext(ThemeContext);
   return (
-    <div className='grid grid-cols-3 gap-2 grid-rows-7'>
+    <div className='grid grid-cols-3 gap-2 grid-rows-7 mb-3 mt-3'>
         {Object.keys(icons).map(key => {
           let Icon = icons[key];
           return <SkillCard key={key} icon={<Icon size='40px' className={`${theme.icon}`} />} name={key} />

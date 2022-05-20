@@ -7,7 +7,7 @@ export default function ContactCard({icon, name}) {
 
     <div className={`flex flex-col justify-center items-center ${theme.iconbg} rounded-2xl w-20`}>
         {icon}
-    <h2 className={`${theme.icon}`}>{name}</h2>
+    <h2 className={`${theme.icon} font-my-serif`}>{name}</h2>
 </div>
   );
 }

@@ -6,7 +6,7 @@ export default function SkillCard({icon, name}) {
   return (
     <div className={`flex flex-col justify-center items-center ${theme.iconbg} rounded-tr-2xl rounded-bl-2xl`}>
         {icon}
-        <h2 className={`${theme.icon}`}>{name}</h2>
+        <h2 className={`${theme.icon} font-my-serif`}>{name}</h2>
     </div>
   );
 }
