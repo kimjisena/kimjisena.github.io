@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
-import {BsChatRightText} from 'react-icons/bs';
+//import {BsChatRightText} from 'react-icons/bs';
+import {AiFillMessage} from 'react-icons/ai';
 import { ThemeContext } from '../theme-context';
 import NotificationSlider from './NotificationSlider';
 
@@ -19,7 +20,7 @@ export default function Notification({show}) {
          onClick={(e)=> {
           e.stopPropagation();
           setNotify(!notify);}}>
-      <BsChatRightText className={`w-8 h-8 ${theme.icon} mx-auto mt-2`}/>
+      <AiFillMessage className={`w-8 h-8 ${theme.icon} mx-auto mt-2`}/>
       <p className={`absolute -top-2 text-lg left-[25%] font-bold bg-red-500 w-6 h-6 text-center rounded-full ${notify ? 'invisible': ''} transition-[visibility]`}>1</p>
     </div>
     <NotificationSlider show={show} notify={notify}/>
