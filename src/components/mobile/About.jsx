@@ -4,12 +4,7 @@ import Skills from './Skills';
 import TopImage from './TopImage';
 import { ThemeContext } from '../theme-context';
 import HLevel2 from './HLevel2';
-//import { VscLink } from 'react-icons/vsc';
 import {HiOutlineLink} from 'react-icons/hi';
-
-const text = `Ipsum est proident et ea non. 
-              Officia ut magna in deserunt consequat laborum fugiat sint. 
-              Ipsum labore enim irure sunt exercitation do sit qui quis.`
 
 export default function About() {
 
@@ -29,39 +24,70 @@ export default function About() {
           <HiOutlineLink className={`w-8 h-8 ${theme.pH2}`}/>
         </HLevel2>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`Hello, and welcome to my portfolio!`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`I'm Ponsiano Jisena, a developer from Tanzania. 
+            I've spent the best part of my life conjuring ghouls and daemons hidden deep in my computer.`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`It's been both an exciting journey and a humbling experience. 
+          I have witnessed processes give birth to other processes only to end up killing them both. 
+          I have read hundreds of manual pages only to be referred to other huge and almost cryptic manuals.`}
+        </Paragraph>
+        <Paragraph theme={theme.pH2}>
+          {`It's an infinite loop that I enjoy living, and I intend to keep it that way for as 
+          long as my heart keeps its beat.`}
         </Paragraph>
 
         <HLevel2 theme={theme.pH2} text={'what do i'}>
           <HiOutlineLink className={`w-8 h-8 ${theme.pH2}`}/>
         </HLevel2>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`I spend most of my active time writing computer code, reading computer code, 
+          reading books on computer code and wrestling with my Linux box (probably I should get a life).`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`I'm currently investing more time in frontend development partly because it's 
+          very accessible and feedback is immediate. To truly appreciate a C 'Hello World' program, 
+          one has to know just how involved the standard I/O stream is.`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`On the other hand, things happen very fast when one's declaring UI using 
+          React's JSX syntax...'Hello React' just hits different.`}
+        </Paragraph>
+        <Paragraph theme={theme.pH2}>
+          {`Here are some tools that commonly cross my hands on (almost) a day to day basis.`}
         </Paragraph>
         <Skills />
+        <Paragraph theme={theme.pH2}>
+          {`Wait, Linux and Arch Linux? Redundancy you say? 
+          There was no way Arch couln't have made the list...cool toy that one.`}
+        </Paragraph>
         <HLevel2 theme={theme.pH2} text={'what love i'}>
           <HiOutlineLink className={`w-8 h-8 ${theme.pH2}`}/>
         </HLevel2>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`I like everything tech. 
+          I know this because I never get enough of it and no matter how many interests I develop, 
+          tech always comes first.`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`I enjoy reading books (fiction and technical books). 
+          Language is another phenomenon that never ceases to amaze me. 
+          I'm currently acquiring Spanish, alongside a bunch of other programming languages.`}
         </Paragraph>
         <Paragraph theme={theme.pH2}>
-          {text}
+          {`Not to sound philosophical or something but, 
+          language shapes thoughts and thoughts shape one's subjective reality, 
+          and I'd like my own reality to be shaped by as many languages (both human and machine languages) as I can acquire.`}
+        </Paragraph>
+        <Paragraph theme={theme.pH2}>
+          {`I enjoy both ancient and contemporary history. 
+          Humanity has come a long way and history tells the best of humanity's stories.`}
+        </Paragraph>
+        <Paragraph theme={theme.pH2}>
+          {`This whole thing is turning into a blog, isn't it?`}
         </Paragraph>
       </div>
     </section>

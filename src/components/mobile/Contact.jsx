@@ -13,9 +13,11 @@ const icons = {
   Email: MdEmail
 }
 
-const text = `Ipsum est proident et ea non. 
-              Officia ut magna in deserunt consequat laborum fugiat sint. 
-              Ipsum labore enim irure sunt exercitation do sit qui quis.`
+const p1 = `Well, I think we should keep in touch. 
+              I can be reached via GitHub, Twitter, and Email; 
+              and it's as simple as clicking one of the buttons below.`
+
+const p2 = `Talk to you soon! ^_^`
 
 export default function Contact() {
   const theme = useContext(ThemeContext);
@@ -24,13 +26,10 @@ export default function Contact() {
       <h1 id='contact' className='invisible h-12'>contact me</h1>
       <h1 className={`text-5xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-serif`}>Contact me</h1>
       <Paragraph theme={theme.pH2}>
-        {text}
+        {p1}
       </Paragraph>
       <Paragraph theme={theme.pH2}>
-        {text}
-      </Paragraph>
-      <Paragraph theme={theme.pH2}>
-        {text}
+        {p2}
       </Paragraph>
       <div className='grid grid-cols-3 gap-2 justify-items-center mt-3'>
         {Object.keys(icons).map(key => {
