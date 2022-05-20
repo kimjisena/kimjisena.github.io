@@ -35,7 +35,7 @@ export default function Mobile({toggleTheme}) {
         <TopNav toggleTheme={toggleTheme}/>
         <MobileMain />
         <BackToTheTop show={scroll} />
-        <Notification show={scroll} />
+        <Notification show={!scroll} />
     </div>
   );
 }
