@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import TopNav from './TopNav';
 import MobileMain from './MobileMain';
 import BackToTheTop from './BackToTheTop';
+import Notification from './Notification';
 
 export default function Mobile({toggleTheme}) {
 
@@ -34,6 +35,7 @@ export default function Mobile({toggleTheme}) {
         <TopNav toggleTheme={toggleTheme}/>
         <MobileMain />
         <BackToTheTop show={scroll} />
+        <Notification show={scroll} />
     </div>
   );
 }
