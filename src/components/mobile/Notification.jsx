@@ -14,11 +14,15 @@ export default function Notification({show}) {
   }, [show, notify]);
 
   return (
+    <>
     <div className={`fixed ${show ? 'right-2': 'right-full'} top-[90%] rounded-full ${theme.iconbg} h-12 w-12`}
-         onClick={()=> setNotify(!notify)}>
+         onClick={(e)=> {
+          e.stopPropagation();
+          setNotify(!notify);}}>
       <BsChatRightText className={`w-8 h-8 ${theme.icon} mx-auto mt-2`}/>
       <p className={`absolute -top-2 text-lg left-[25%] font-bold bg-red-500 w-6 h-6 text-center rounded-full ${notify ? 'invisible': ''}`}>1</p>
-      <NotificationSlider show={show} notify={notify}/>
     </div>
+    <NotificationSlider show={show} notify={notify}/>
+    </>
   );
 }
