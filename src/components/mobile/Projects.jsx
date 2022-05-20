@@ -48,7 +48,7 @@ export default function Projects() {
       <h1 className={`text-5xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-serif`}>My projects</h1>
       {/*introductory text*/}
       <p className={`${theme.pH2} text-xl font-my-serif ml-2`}>
-        Ever since I came across Marijn Heverbeke's Eloquent JavaScript, my understanding of the web has changed drastically. 
+        Ever since I came across Marijn Haverbeke's Eloquent JavaScript, my understanding of the web has changed drastically. 
         Then naturally I acquired the React philosophy and workflow... add Tailwind CSS to the mix and I'm glued to my screen for life!
       </p>
       <p className={`${theme.pH2} text-xl mb-3 font-my-serif ml-2`}>
