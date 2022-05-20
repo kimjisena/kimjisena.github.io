@@ -15,7 +15,7 @@ export default function TopNav({toggleTheme}) {
     setSideNav(!sideNav);
   }
   return (
-    <header className={`fixed top-0 w-full h-14 ${theme.headerbg}`}>
+    <header className={`fixed top-0 w-full h-14 ${theme.headerbg} shadow-lg shadow-cool-black opacity-95`}>
       <div className='grid grid-cols-3 h-full'>
         <ToggleTheme toggleTheme={toggleTheme} />
         <h1 className={`text-center ${theme.headertxt} font-bold font-my-cursive text-4xl align-middle mt-3 col-span-1`}>{'jisena'}</h1>
