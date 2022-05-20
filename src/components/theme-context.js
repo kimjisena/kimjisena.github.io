@@ -13,7 +13,6 @@ export const themes = {
         headertxt: 'text-cool-white',
         sideborder: 'border-cool-white',
         footer: 'bg-cool-green',
-        notfbg: 'cool-blue',
     },
     dark: {
         background: 'bg-cool-dark',
@@ -27,7 +26,6 @@ export const themes = {
         headertxt: 'text-dark-cool-white',
         sideborder: 'border-dark-cool-white',
         footer: 'bg-dark-cool-green',
-        notfbg: 'dark-cool-blue'
     }
 }
 

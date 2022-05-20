@@ -26,10 +26,6 @@ export default function Mobile({toggleTheme}) {
     return () => {document.removeEventListener('scroll', handleScrolling)};
   });
 
-  // useEffect(() => {
-  //   document.body.className = 'bg-cool-white';
-  // });
-
   return (
     <div className='sm:hidden'>
         <TopNav toggleTheme={toggleTheme}/>
