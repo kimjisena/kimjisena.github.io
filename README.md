@@ -1,4 +1,4 @@
-# Portfolio/Blog React Project
+# React-Portfolio Project
 
 ## About This Project
 
