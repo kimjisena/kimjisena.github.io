@@ -3,6 +3,7 @@ import Paragraph from './Paragraph';
 import Skills from './Skills';
 import TopImage from './TopImage';
 import { ThemeContext } from '../theme-context';
+import HLevel2 from './HLevel2';
 
 const text = `Ipsum est proident et ea non. 
               Officia ut magna in deserunt consequat laborum fugiat sint. 
@@ -22,7 +23,7 @@ export default function About() {
       <div className='col-span-full mt-2'>
         <h1 id='about' className='invisible h-12'>about me</h1>
         <h1 className={`text-4xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-sans`}>about me</h1>
-        <h2 className={`${theme.pH2} text-2xl font-bold font-my-sans`}>who am i</h2>
+        <HLevel2 theme={theme.pH2} text={'who am i'}/>
         <Paragraph text={text} theme={theme.pH2} />
         <Paragraph text={text} theme={theme.pH2} />
         <Paragraph text={text} theme={theme.pH2} />
