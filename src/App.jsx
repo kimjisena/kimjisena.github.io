@@ -12,6 +12,8 @@ export default function App() {
   useEffect(() => {
      if (light) document.body.className = 'bg-cool-white';
      else document.body.className = 'bg-cool-dark';
+     //document.body.className = 'transition-colors';
+     document.body.classList.add('transition-colors', 'duration-500');
   });
 
   const toggleTheme = () => {

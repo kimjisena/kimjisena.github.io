@@ -12,7 +12,7 @@ export default function SideNav({show, blurred}) {
   const theme = useContext(ThemeContext);
 
   return (
-    <div className={`absolute top-full ${show ? 'right-0': 'right-full'}
+    <div className={`absolute top-full ${show ? 'left-[25%]': 'left-full'} transition-[left] duration-500
                   ${theme.headerbg} w-3/4 border ${theme.sideborder}
                   rounded-tl-xl rounded-bl-xl h-40`}
          onBlur={() => blurred()}>
