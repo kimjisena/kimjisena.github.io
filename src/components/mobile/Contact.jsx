@@ -8,9 +8,18 @@ import {BsTwitter} from 'react-icons/bs';
 import {MdEmail} from 'react-icons/md';
 
 const icons = {
-  GitHub: DiGithubBadge,
-  Twitter: BsTwitter,
-  Email: MdEmail
+  GitHub: {
+    icon: DiGithubBadge,
+    link: 'https://github.com/kimjisena'
+  },
+  Twitter: {
+    icon: BsTwitter,
+    link: 'https://twitter.com/kimjisena'
+  },
+  Email: {
+    icon: MdEmail,
+    link:'mailto:pjohmaths@gmail.com'
+  }
 }
 
 const p1 = `Well, I think we should keep in touch. 
@@ -33,8 +42,11 @@ export default function Contact() {
       </Paragraph>
       <div className='grid grid-cols-3 gap-2 justify-items-center mt-3'>
         {Object.keys(icons).map(key => {
-          let Icon = icons[key];
-          return <ContactCard key={key} icon={<Icon size='32px' className={`${theme.icon}`}/>} name={key}/>
+          let Icon = icons[key].icon;
+          return (
+            <a href={icons[key].link}>
+              <ContactCard key={key} icon={<Icon size='32px' className={`${theme.icon}`}/>} name={key}/>
+            </a>);
         })}
       </div>
     </section>

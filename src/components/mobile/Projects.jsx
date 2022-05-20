@@ -13,7 +13,7 @@ export default function Projects() {
       logo: javascript,
       description:  <Paragraph theme={theme.pH2}>
                     A custom django admin site.
-                    It's a work in progress, check it <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
+                    It's a work in progress, check it <a href={'https://github.com/kimjisena/reactive-admin'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
                     </Paragraph>
     },
     'compyle': {
@@ -21,7 +21,7 @@ export default function Projects() {
       logo: javascript,
       description:  <Paragraph theme={theme.pH2}>
                     A python script that watches and compiles C code.
-                    Let's me focus on K &amp; R. It's <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
+                    Let's me focus on K &amp; R. It's <a href={'https://github.com/kimjisena/compyle'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
                     </Paragraph>
     },
     'react-portifolio': {
@@ -29,7 +29,7 @@ export default function Projects() {
       logo: javascript,
       description:  <Paragraph theme={theme.pH2}>
                     A single-page app, built using mobile-first design.
-                    Check the code for this project <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
+                    Check the code for this project <a href={'https://github.com/kimjisena/kimjisena.github.io'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
                     </Paragraph>
     },
     'game-of-death': {
@@ -37,7 +37,7 @@ export default function Projects() {
       logo: javascript,
       description:  <Paragraph theme={theme.pH2}>
                     Conway's game of life, except it's game of death.
-                    Not freaked out? Check the code right <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
+                    Not freaked out? Check the code right <a href={'https://github.com/kimjisena/game-of-death'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
                     </Paragraph>
     }
   }
