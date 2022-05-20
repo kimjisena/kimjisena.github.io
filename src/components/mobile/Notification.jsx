@@ -11,7 +11,7 @@ export default function Notification({show}) {
       if (!show && notify) {
           setNotify(!notify);
       }
-  });
+  }, [show, notify]);
 
   return (
     <div className={`fixed ${show ? 'right-2': 'right-full'} top-[90%] rounded-full ${theme.iconbg} h-12 w-12`}

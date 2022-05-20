@@ -1,9 +1,50 @@
 import React, {useContext} from 'react';
 import ProjectCard from './ProjectCard';
 import { ThemeContext } from '../theme-context';
+import Paragraph from './Paragraph';
+import javascript from '../../res/images/projects/javascript.svg';
 
 export default function Projects() {
   const theme = useContext(ThemeContext);
+
+  const projects = {
+    'shit racer': {
+      done: false,
+      logo: javascript,
+      description:  <Paragraph theme={theme.pH2}>
+                    Ipsum est proident et ea non.
+                    Officia ut magna in deserunt consequat 
+                    laborum <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
+                    </Paragraph>
+    },
+    'compyle': {
+      done: true,
+      logo: javascript,
+      description:  <Paragraph theme={theme.pH2}>
+                    Ipsum est proident et ea non.
+                    Officia ut magna in deserunt consequat 
+                    laborum <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
+                    </Paragraph>
+    },
+    'blog/portifolio': {
+      done: false,
+      logo: javascript,
+      description:  <Paragraph theme={theme.pH2}>
+                    Ipsum est proident et ea non.
+                    Officia ut magna in deserunt consequat 
+                    laborum <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
+                    </Paragraph>
+    },
+    'conway': {
+      done: false,
+      logo: javascript,
+      description:  <Paragraph theme={theme.pH2}>
+                    Ipsum est proident et ea non.
+                    Officia ut magna in deserunt consequat 
+                    laborum <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
+                    </Paragraph>
+    }
+  }
 
   return (
     <section className='col-span-full mt-2'>
@@ -15,10 +56,13 @@ export default function Projects() {
       </p>
 
       {/*project cards */}
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
+      {Object.keys(projects).map(
+        (key) => {
+        return (<ProjectCard key={key} done={projects[key].done} name={key} logo={projects[key].logo}>
+                  {projects[key].description}
+                </ProjectCard>);
+        }
+      )}
     </section>
   );
 }

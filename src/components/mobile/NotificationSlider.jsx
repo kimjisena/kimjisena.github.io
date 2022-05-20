@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import { ThemeContext } from '../theme-context';
-import { VscTriangleRight } from 'react-icons/vsc';
 
 export default function NotificationSlider({show, notify}) {
 

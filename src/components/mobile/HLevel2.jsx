@@ -1,5 +1,4 @@
 import React from 'react';
-import { VscLink } from 'react-icons/vsc';
 
 export default function HLevel2({theme, text, children}) {
   return (
