@@ -1,6 +1,10 @@
 import React, { useContext} from 'react';
 import logo1 from '../../res/images/logo1.png';
 import { ThemeContext } from '../theme-context';
+import HLevel2 from './HLevel2';
+import Paragraph from './Paragraph';
+import { MdIncompleteCircle } from 'react-icons/md';
+import { MdDoneAll, MdRemoveDone } from 'react-icons/md';
 
 export default function ProjectCard() {
   const theme = useContext(ThemeContext);
@@ -13,12 +17,14 @@ export default function ProjectCard() {
 
         {/*project title and description*/}
         <div className='ml-2'>
-            <h2 className={`${theme.pH2} text-2xl font-bold mt-1 font-my-sans`}>shit racer</h2>
-            <p className={`${theme.pH2} text-lg font-my-sans`}>
+            <HLevel2 theme={theme.pH2} text={`shit racer`}>
+              <MdRemoveDone className={`w-8 h-8 ${theme.pH2}`}/>
+            </HLevel2>
+            <Paragraph theme={theme.pH2}>
                 Ipsum est proident et ea non.
                 Officia ut magna in deserunt consequat laborum
-                {/*project link*/} <a href={'#about'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
-            </p>
+                 {/* */} <a href={'#about'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>fugiat sint</a>.
+            </Paragraph>
         </div>
     </div>
   );
