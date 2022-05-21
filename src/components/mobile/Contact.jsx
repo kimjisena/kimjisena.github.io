@@ -44,8 +44,8 @@ export default function Contact() {
         {Object.keys(icons).map(key => {
           let Icon = icons[key].icon;
           return (
-            <a href={icons[key].link}>
-              <ContactCard key={key} icon={<Icon size='32px' className={`${theme.icon}`}/>} name={key}/>
+            <a href={icons[key].link} key={key}>
+              <ContactCard icon={<Icon size='32px' className={`${theme.icon}`}/>} name={key}/>
             </a>);
         })}
       </div>

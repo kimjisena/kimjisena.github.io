@@ -10,13 +10,19 @@ export default function App() {
   const [light, setLight] = useState(true);
 
   useEffect(() => {
+    if (localStorage.getItem('theme') === null) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.getItem('theme') === 'light' ? setLight(true) : setLight(false);
+    }
+
      if (light) document.body.className = 'bg-cool-white';
      else document.body.className = 'bg-cool-dark';
-     //document.body.className = 'transition-colors';
      document.body.classList.add('transition-colors', 'duration-500');
-  });
+  }, [light]);
 
   const toggleTheme = () => {
+    light ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
     setLight(!light);
   }
 

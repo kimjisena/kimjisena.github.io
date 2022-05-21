@@ -47,11 +47,11 @@ export default function Projects() {
       <h1 id='projects' className='invisible h-12'>my projects</h1>
       <h1 className={`text-5xl ${theme.H1} font-bold border-b-2 ${theme.h1Border} font-my-serif`}>My projects</h1>
       {/*introductory text*/}
-      <p className={`${theme.pH2} text-xl font-my-serif ml-2`}>
+      <p className={`${theme.pH2} text-md font-my-sans ml-2 mb-3 leading-7`}>
         Ever since I came across Marijn Haverbeke's Eloquent JavaScript, my understanding of the web has changed drastically. 
         Then naturally I acquired the React philosophy and workflow... add Tailwind CSS to the mix and I'm glued to my screen for life!
       </p>
-      <p className={`${theme.pH2} text-xl mb-3 font-my-serif ml-2`}>
+      <p className={`${theme.pH2} text-md mb-3 font-my-sans ml-2 leading-7`}>
         Here are some interesting projects I'm working on. 
       </p>
 
@@ -63,7 +63,7 @@ export default function Projects() {
                 </ProjectCard>);
         }
       )}
-      <p className={`${theme.pH2} text-xl mb-3 font-my-serif ml-2`}>
+      <p className={`${theme.pH2} text-md mb-3 font-my-sans ml-2 leading-7`}>
       You can see more on my GitHub profile right <a href={'https://github.com/kimjisena'} className={`${theme.H1} hover:text-cool-green visited:text-cool-yellow underline`}>here</a>.
       </p>
     </section>
