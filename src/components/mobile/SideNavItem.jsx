@@ -7,7 +7,7 @@ export default function SideNavItem({item, link}) {
     <>
         <li className={`border-b-2 mb-1 ${theme.sideborder}`}>
             <a href={link}>
-                <h2 className={`${theme.headertxt} font-bold font-my-serif text-3xl ${theme.sidehover}`}>{item}</h2>
+                <h2 className={`${theme.headertxt} font-bold font-my-sans text-2xl ${theme.sidehover}`}>{item}</h2>
             </a>
         </li>
     </>
